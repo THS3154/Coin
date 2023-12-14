@@ -321,6 +321,19 @@
           }
         }
       },
+      "CustomScrollbar/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Dialog/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1160,6 +1173,11 @@
         "websocketsharp-netstandard.nuspec"
       ]
     },
+    "CustomScrollbar/1.0.0": {
+      "type": "project",
+      "path": "../CustomScrollbar/CustomScrollbar.csproj",
+      "msbuildProject": "../CustomScrollbar/CustomScrollbar.csproj"
+    },
     "Dialog/1.0.0": {
       "type": "project",
       "path": "../Dialog/Dialog.csproj",
@@ -1203,6 +1221,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "CustomScrollbar >= 1.0.0",
       "Dialog >= 1.0.0",
       "FileIO >= 1.0.0",
       "Language >= 1.0.0",
@@ -1254,6 +1273,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj": {
+              "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj"
+            },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj"
             },

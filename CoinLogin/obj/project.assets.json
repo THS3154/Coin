@@ -457,6 +457,19 @@
           }
         }
       },
+      "CustomScrollbar/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "DB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -586,6 +599,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
           "Language": "1.0.0",
@@ -1636,6 +1650,11 @@
         "websocketsharp-netstandard.1.0.1.nupkg.sha512",
         "websocketsharp-netstandard.nuspec"
       ]
+    },
+    "CustomScrollbar/1.0.0": {
+      "type": "project",
+      "path": "../CustomScrollbar/CustomScrollbar.csproj",
+      "msbuildProject": "../CustomScrollbar/CustomScrollbar.csproj"
     },
     "DB/1.0.0": {
       "type": "project",

@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoinLogin\CoinLogin.csproj" />
+    <ProjectReference Include="..\CustomScrollbar\CustomScrollbar.csproj" />
     <ProjectReference Include="..\FileIO\FileIO.csproj" />
     <ProjectReference Include="..\Network\Network.csproj" />
     <ProjectReference Include="..\Permission\Permission.csproj" />

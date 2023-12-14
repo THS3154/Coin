@@ -72,3 +72,5 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\Perm
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\Permission.pdb
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\TitleBar.dll
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\TitleBar.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\CustomScrollbar.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Coins\bin\Debug\net6.0-windows\CustomScrollbar.pdb

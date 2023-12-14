@@ -603,6 +603,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "CustomScrollbar/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomScrollbar.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "DB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -767,6 +780,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
           "Language": "1.0.0",
@@ -2257,6 +2271,11 @@
       "path": "../CoinLogin/CoinLogin.csproj",
       "msbuildProject": "../CoinLogin/CoinLogin.csproj"
     },
+    "CustomScrollbar/1.0.0": {
+      "type": "project",
+      "path": "../CustomScrollbar/CustomScrollbar.csproj",
+      "msbuildProject": "../CustomScrollbar/CustomScrollbar.csproj"
+    },
     "DB/1.0.0": {
       "type": "project",
       "path": "../DB/DB.csproj",
@@ -2321,6 +2340,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "CoinLogin >= 1.0.0",
+      "CustomScrollbar >= 1.0.0",
       "FileIO >= 1.0.0",
       "Network >= 1.0.0",
       "Permission >= 1.0.0",
@@ -2369,6 +2389,9 @@
           "projectReferences": {
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj"
+            },
+            "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj": {
+              "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj"
             },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"

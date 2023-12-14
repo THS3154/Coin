@@ -266,6 +266,11 @@
           }
         }
       },
+      "CustomScrollbar/1.0.0": {
+        "runtime": {
+          "CustomScrollbar.dll": {}
+        }
+      },
       "DB/1.0.0": {
         "dependencies": {
           "FileIO": "1.0.0",
@@ -336,6 +341,7 @@
       },
       "Upbit/1.0.0": {
         "dependencies": {
+          "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
           "Language": "1.0.0",
@@ -564,6 +570,11 @@
       "sha512": "sha512-knoinAv31vbdxXdypnzN2MPX5hyntVLWceq6OdWRXkr9zzqp/RWbxSuLFGbkW8De1061URgNAN43BUTlgMx1CA==",
       "path": "websocketsharp-netstandard/1.0.1",
       "hashPath": "websocketsharp-netstandard.1.0.1.nupkg.sha512"
+    },
+    "CustomScrollbar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DB/1.0.0": {
       "type": "project",

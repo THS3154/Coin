@@ -71,6 +71,15 @@ namespace Upbit.ViewModels
         }
         #endregion Colors
         #region Models
+        private string searchcoin = "";
+        public string SearchCoin
+        {
+            get { return searchcoin; }
+            set {
+                SetProperty(ref searchcoin, value);
+                CoinFilter = SelectMarket;
+            }
+        }
         private string selectmartket;
         public string SelectMarket
         {
@@ -255,13 +264,25 @@ namespace Upbit.ViewModels
         {
             Structs.MarketCodes mc = (Structs.MarketCodes)e.Item;
             
-            if (string.IsNullOrWhiteSpace(this.CoinFilter) || this.CoinFilter.Length == 0)
+            if (string.IsNullOrWhiteSpace(this.CoinFilter) && SearchCoin == "")
             {
                 e.Accepted = true;
             }
             else
             {
-                e.Accepted = mc.Market.Split("-")[0].Contains(CoinFilter);
+                bool _b = false;
+                if(SearchCoin != "")
+                {
+                    string en = mc.English_name.ToUpper();
+                    string sig = SearchCoin.ToUpper();
+                    _b = (mc.Korean_name.Contains(SearchCoin) || mc.Market.Split("-")[1].Contains(sig) || en.Contains(SearchCoin.ToUpper())) && (CoinFilter is null ? true : mc.Market.Split("-")[0].Contains(CoinFilter))  ;
+                }
+                else
+                {
+                    _b =  mc.Market.Split("-")[0].Contains(CoinFilter);
+                }
+                
+                e.Accepted = _b;
             }
 
         }
@@ -289,6 +310,7 @@ namespace Upbit.ViewModels
             viewmarket.Source = this.Markets;
             viewmarket.Filter += ApplyFilter;
 
+            CoinFilter = "";
             //색변경 이벤트 등록
             PublicColor.Colors.ColorUpdate += (EventUpdateColor);
 

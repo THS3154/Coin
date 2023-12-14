@@ -4,13 +4,24 @@
              xmlns:prism="http://prismlibrary.com/"             
              xmlns:conv="clr-namespace:Upbit.Converter"
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             
+             MinHeight="500"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <UserControl.Resources>
-        <conv:IsBoolToVisblityConverter x:Key="IsBoolToVisblityConverter"/>
+        
+        <ResourceDictionary>
+            <conv:IsBoolToVisblityConverter x:Key="IsBoolToVisblityConverter"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/CustomScrollbar;component/Themes/CustomScrollbar.xaml"/> 
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
     </UserControl.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
@@ -29,7 +40,14 @@
         </Grid>
 
         <Grid Grid.Row="1">
+            <TextBox Text="{Binding SearchCoin ,UpdateSourceTrigger=PropertyChanged}">
+                
+            </TextBox>
+        </Grid>
+        <Grid Grid.Row="2">
             <ListView x:Name="LvMarket" ItemsSource="{Binding ViewMarket , UpdateSourceTrigger=PropertyChanged }"  ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                <ListView.Resources>
+                </ListView.Resources>
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseDoubleClick">
                         <i:InvokeCommandAction Command="{Binding CommandSendCoin}" CommandParameter="{Binding ElementName=LvMarket, Path=SelectedItem}" />
