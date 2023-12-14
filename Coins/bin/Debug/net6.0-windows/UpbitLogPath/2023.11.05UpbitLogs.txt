@@ -1,0 +1,15 @@
+[  UPBITLOG : 13:12:11 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:12:37 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:12:47 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:20:25 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:20:30 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:20:39 ] AccessKey,SecretKey 오류
+[  UPBITLOG : 13:22:53 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:12 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:12 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:12 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:13 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:14 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:15 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:15 ] 주문가능정보 오류
+[  UPBITLOG : 13:23:15 ] 주문가능정보 오류

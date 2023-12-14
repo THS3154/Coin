@@ -1,0 +1,11 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\bin\Debug\net6.0\Socket.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\bin\Debug\net6.0\Socket.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\bin\Debug\net6.0\Socket.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\refint\Socket.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\Socket.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Socket\obj\Debug\net6.0\ref\Socket.dll

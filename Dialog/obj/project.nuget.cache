@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eTi7NDJdtR9k0gWK07qkf9xSrbA5EScn72L92DmXva4rIj5dwFjPwSJEVFMy5QojJRtJq/dA/aEVynOxRH2kCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dldyd\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\dldyd\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\dldyd\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}

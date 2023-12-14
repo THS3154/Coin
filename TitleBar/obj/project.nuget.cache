@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vi4H8y+xNtTrQTM2AWHB/rrCtavHKuIpUoHFiHT/c7OvHCKqBlpVj07yzpLsOybyc4flwc4D8uO3ZPhirK9G0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TitleBar\\TitleBar.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dldyd\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,48 @@
+﻿<Window x:Class="Coins.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:TitleBar="clr-namespace:TitleBar;assembly=TitleBar"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        x:Name="MyWindow"
+        ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen"
+        MaxHeight="{Binding Source={x:Static SystemParameters.MaximizedPrimaryScreenHeight}}"
+        MaxWidth="{Binding Source={x:Static SystemParameters.MaximizedPrimaryScreenWidth}}"
+        Title="{Binding Title}" Height="800" Width="1400"  >
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="pack://application:,,,/TitleBar;component/TitleBarView.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="10" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid Margin="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TitleBar:TitleBarModel Grid.Row="0" Style="{StaticResource ResourceKey=MyTitle}" ContentColor="Black" WindowForm="{x:Reference MyWindow}" BackColor="White" HoverBackColor="#FFCFE7FD" TitleName="{Binding Title}" />
+
+        <Border Grid.Row="1" Background="White">
+            <ContentControl  x:Name="RegionBase" prism:RegionManager.RegionName="Main" />
+        </Border>
+
+        <!--Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Command="{Binding CommandName}" CommandParameter="Upbit" Content="메인"/>
+            <Button Grid.Column="1" Command="{Binding CommandName}" CommandParameter="Login" Content="Test"/>
+        </Grid-->
+    </Grid>
+</Window>

@@ -1,0 +1,225 @@
+﻿<UserControl x:Class="Upbit.Views.CoinOrder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"       
+             xmlns:conv="clr-namespace:Upbit.Converter"
+             xmlns:ot="clr-namespace:OrderTextbox;assembly=OrderTextbox"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/OrderTextbox;component/ROrderTextbox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <conv:DivByThreeConverter  x:Key="DivByThreeConverter"/>
+            <conv:DivByTwoConverter x:Key="DivByTwoConverter"/>
+            <conv:OrderViewConverter x:Key="OrderViewConverter"/>
+            <conv:IsReverseBool x:Key="IsReverseBool"/>
+            <conv:BidAskLangConverter x:Key="BidAskLangConverter"/>
+            <conv:IsChanceOrderViewBtnVisiblityConverter x:Key="IsChanceOrderViewBtnVisiblityConverter"/>
+            <Style TargetType="Button" x:Key="BidButton">
+                <Setter Property="Background" Value="{Binding MyColors.ColorBidBack}"/>
+                <Setter Property="Foreground" Value="{Binding MyColors.ColorBid}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="{Binding MyColors.ColorBid}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Grid>
+                                    <Rectangle x:Name="Background" Fill="{TemplateBinding Background}"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Background"  Property="Opacity" Value="0.8" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Button" x:Key="AskButton">
+                <Setter Property="Background" Value="{Binding MyColors.ColorAskBack}"/>
+                <Setter Property="Foreground" Value="{Binding MyColors.ColorAsk}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="{Binding MyColors.ColorAsk}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Grid>
+                                    <Rectangle x:Name="Background" Fill="{TemplateBinding Background}"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Background"  Property="Opacity" Value="0.8" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+            </Style>
+
+            <Style TargetType="Button" x:Key="OrderButton">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="{Binding BtnBorder}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="{Binding BtnBorder}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" >
+                                <Grid>
+                                    <Rectangle x:Name="Background" Fill="Transparent"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Background"  Property="Opacity" Value="0.5" />
+                                    <Setter TargetName="Background" Property="Fill" Value="{Binding BtnBack}"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+            </Style>
+
+            <Style TargetType="Button" x:Key="ChanceButton">
+                <Setter Property="Background" Value="{Binding MyColors.ColorBack}"/>
+                <Setter Property="Foreground" Value="{Binding MyColors.ColorText}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="{Binding MyColors.ColorText}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Grid>
+                                    <Rectangle x:Name="Background" Fill="{TemplateBinding Background}"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Background"  Property="Opacity" Value="0.8" />
+                                    <Setter TargetName="Background" Property="Fill" Value="{Binding MyColors.ColorBack}" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="OrderListBoxLeft">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="OrderListBoxRight">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+            </Style>
+        </ResourceDictionary>
+
+
+
+    </UserControl.Resources>
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" x:Name="ButtonGrid">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Button Style="{StaticResource BidButton}" Content="{Binding Lang.LCoinBuy}" Height="{Binding ActualHeight,ElementName=ButtonGrid}" Width="{Binding ActualWidth,ElementName=MainGrid,Converter={StaticResource DivByThreeConverter}}" Command="{Binding CommandBidAskType}" CommandParameter="T"/>
+                <Button Style="{StaticResource AskButton}" Content="{Binding Lang.LCoinSell}" Height="{Binding ActualHeight,ElementName=ButtonGrid}" Width="{Binding ActualWidth,ElementName=MainGrid,Converter={StaticResource DivByThreeConverter}}" Command="{Binding CommandBidAskType}" CommandParameter="F"/>
+                <Button Style="{StaticResource ChanceButton}" Content="{Binding Lang.LOrderList}" Height="{Binding ActualHeight,ElementName=ButtonGrid}" Width="{Binding ActualWidth,ElementName=MainGrid,Converter={StaticResource DivByThreeConverter}}" Command="{Binding CommandBidAskType}" CommandParameter="O"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="{Binding GridColor}" >
+            <Grid Visibility="{Binding OrderView,Converter={StaticResource OrderViewConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Margin="5">
+                    <RadioButton Content="{Binding Lang.LMarket}" Command="{Binding CommandIsMarket}" CommandParameter="m"></RadioButton>
+                    <RadioButton Content="{Binding Lang.LLimit}" Command="{Binding CommandIsMarket}" CommandParameter="l" IsChecked="True" Margin="15,0,0,0"></RadioButton>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,0,5,5" >
+                    <ot:COrderTextbox Margin="0,2,0,2" HorizontalAlignment="Stretch" Style="{StaticResource ResourceKey=OrderTextbox}" Prefix="{Binding Lang.LOrderPrice}" Subffix="{Binding AcitiveOrderCurrency}" TextValue="{Binding ActiveOrderPrice,Mode=TwoWay}" TextboxEnable="False" BorderColor="{Binding BtnBorder}" />
+                    <ot:COrderTextbox Margin="0,2,0,2"  Style="{StaticResource ResourceKey=OrderTextbox}" Prefix="{Binding Lang.LQuantity}" Subffix="{Binding OrderCoin}" TextboxEnable="{Binding MarketSell}" TextValue="{Binding StrQuantity,Mode=TwoWay}"  BorderColor="{Binding BtnBorder}" />
+                    <ot:COrderTextbox Margin="0,2,0,2"  Style="{StaticResource ResourceKey=OrderTextbox}" Prefix="{Binding Lang.LPrice}" Subffix="{Binding Currency}" TextboxEnable="{Binding IsMarket,Converter={StaticResource IsReverseBool}}" TextValue="{Binding StrPrice,Mode=TwoWay}" BorderColor="{Binding BtnBorder}" />
+                    <ot:COrderTextbox Margin="0,2,0,2"  Style="{StaticResource ResourceKey=OrderTextbox}" Prefix="{Binding Lang.LTotalPrice}" Subffix="{Binding Currency}" TextboxEnable="{Binding MarketBuy}" TextValue="{Binding StrTotalPrice,Mode=TwoWay}" BorderColor="{Binding BtnBorder}" />
+                </StackPanel>
+
+                <Button Style="{StaticResource OrderButton}" Grid.Row="2" Content="{Binding BtnText}" IsEnabled="{Binding ActiveOrder}" Command="{Binding CommandCoinOrder}" Visibility="{Binding OrderView,Converter={StaticResource OrderViewConverter}}" />
+            </Grid>
+            
+            <Grid Visibility="{Binding OrderListView,Converter={StaticResource OrderViewConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Margin="5">
+                    <RadioButton Content="{Binding Lang.LNotConclusion}" Command="{Binding CommandSelectedOrderList}" CommandParameter="wait" IsChecked="True"></RadioButton>
+                    <RadioButton Content="{Binding Lang.LConclusion}" Command="{Binding CommandSelectedOrderList}" CommandParameter="done"  Margin="15,0,0,0"></RadioButton>
+                </StackPanel>
+
+
+                <ListBox x:Name="OrderListBox" ItemsSource="{Binding OrderList}" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="0" Margin="5,0,5,5" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Width="{Binding  ActualWidth, ElementName=OrderListBox}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Grid.Row="0" Grid.Column="2" Grid.RowSpan="5" Content="{Binding DataContext.Lang.LChanceOrderBtnCancel, ElementName=MainGrid}" 
+                                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding remaining_volume,Converter={StaticResource IsChanceOrderViewBtnVisiblityConverter}}"
+                                        Command="{Binding DataContext.CommandOrderCancel,ElementName=MainGrid}" CommandParameter="{Binding uuid}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxLeft}" Grid.Row="0" Grid.Column="0" Text="{Binding side,Converter={StaticResource BidAskLangConverter}}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxLeft}" Grid.Row="1" Grid.Column="0" Text="{Binding DataContext.Lang.LChanceMarketName, ElementName=MainGrid}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxLeft}" Grid.Row="2" Grid.Column="0" Text="{Binding DataContext.Lang.LChanceOrderPrice, ElementName=MainGrid}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxLeft}" Grid.Row="3" Grid.Column="0" Text="{Binding DataContext.Lang.LChanceOrderQuantity, ElementName=MainGrid}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxLeft}" Grid.Row="4" Grid.Column="0" Text="{Binding DataContext.Lang.LChanceOrderNotConclusion, ElementName=MainGrid}"/>
+
+                                <TextBlock Style="{StaticResource OrderListBoxRight}" Grid.Row="0" Grid.Column="1" Text="{Binding created_at}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxRight}" Grid.Row="1" Grid.Column="1" Text="{Binding market}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxRight}" Grid.Row="2" Grid.Column="1" Text="{Binding price}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxRight}" Grid.Row="3" Grid.Column="1" Text="{Binding volume}"/>
+                                <TextBlock Style="{StaticResource OrderListBoxRight}" Grid.Row="4" Grid.Column="1" Text="{Binding remaining_volume}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+
+        </Grid>
+        
+    </Grid>
+</UserControl>

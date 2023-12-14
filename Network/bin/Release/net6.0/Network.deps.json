@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Network/1.0.0": {
+        "dependencies": {
+          "FileIO": "1.0.0"
+        },
+        "runtime": {
+          "Network.dll": {}
+        }
+      },
+      "FileIO/1.0.0": {
+        "runtime": {
+          "FileIO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Network/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileIO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

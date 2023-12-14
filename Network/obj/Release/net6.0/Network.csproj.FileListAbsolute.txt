@@ -1,0 +1,15 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\bin\Release\net6.0\Network.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\bin\Release\net6.0\Network.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\bin\Release\net6.0\Network.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\bin\Release\net6.0\FileIO.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\bin\Release\net6.0\FileIO.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.csproj.CopyComplete
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\refint\Network.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\Network.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Network\obj\Release\net6.0\ref\Network.dll

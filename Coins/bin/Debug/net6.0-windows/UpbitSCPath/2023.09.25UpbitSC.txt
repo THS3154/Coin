@@ -1,0 +1,4 @@
+[  WEBSOCKETLOG : 12:50:56 ] 업비트 실시간 소켓 연결
+[  WEBSOCKETLOG : 12:50:56 ] 코인 실시간 소켓 연결
+[  WEBSOCKETLOG : 12:52:21 ] 업비트 실시간 소켓 연결
+[  WEBSOCKETLOG : 12:52:21 ] 코인 실시간 소켓 연결

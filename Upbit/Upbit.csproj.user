@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Views\Balance.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BidAskList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CoinList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CoinOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CoinView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DialogAccess.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Chart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Balance.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BidAskList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CoinList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CoinOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CoinView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DialogAccess.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Chart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpbitMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

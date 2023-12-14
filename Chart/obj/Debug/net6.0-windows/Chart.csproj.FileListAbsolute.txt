@@ -1,0 +1,17 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart_MarkupCompile.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart_MarkupCompile.lref
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\refint\Chart.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\bin\Debug\net6.0-windows\Chart.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\bin\Debug\net6.0-windows\Chart.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\bin\Debug\net6.0-windows\Chart.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\RChart.baml
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.g.resources
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\Chart.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\ref\Chart.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Chart\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

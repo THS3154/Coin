@@ -1,0 +1,429 @@
+﻿<UserControl x:Class="Upbit.Views.Chart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:prism="http://prismlibrary.com/"   
+             xmlns:conv="clr-namespace:Upbit.Converter"
+             xmlns:local="clr-namespace:Upbit"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <conv:MultipleHeightConverter x:Key="MultipleHeightConverter"/>
+        <conv:MultipleYConverter x:Key="MultipleYConverter"/>
+        <conv:CandleMarginConverter x:Key="CandleMarginConverter"/>
+        <conv:CandleGridXWidthConverter x:Key="CandleGridXWidthConverter"/>
+        <conv:ChartYAxisConverter x:Key="ChartYAxisConverter"/>
+        <Style TargetType="Line" x:Key="HoverLine">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Stroke" Value="Blue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button" x:Key="BtnTickType">
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="{Binding GridVolumeHeight}"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" HorizontalAlignment="Right">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 캔들 정보 확인 -->
+                <Grid Grid.Column="0" HorizontalAlignment="Right" MinWidth="300" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Vertical">
+                            <Label  Padding="0" Content="{Binding PrintTime}" Width="Auto"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                            <!--Label Content="{Binding PrintCursor}" Width="Auto"/-->
+                            <StackPanel Grid.Row="0" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="시가" Padding="10 0 5 0" />
+                                    <Label Padding="0" Content="{Binding PrintOp}" Width="Auto"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="종가" Padding="10 0 5 0" />
+                                    <Label Padding="0" Content="{Binding PrintTp}" Width="Auto"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="고가" Padding="10 0 5 0" />
+                                    <Label Padding="0" Content="{Binding PrintHp}" Width="Auto"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="종가" Padding="10 0 5 0" />
+                                    <Label Padding="0" Content="{Binding PrintLp}" Width="Auto"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="거래량" Padding="10 0 5 0" />
+                                    <Label Padding="0" Content="{Binding PrintVolume}" Width="Auto"/>
+                                </StackPanel>
+                            </StackPanel>
+
+
+                            <!--Label Content="{Binding Model.PPrice, Converter={StaticResource DoubleStringConverter} ,ConverterParameter='커서값 '}" Width="Auto" Height="30"/-->
+                        </StackPanel>
+                    </Grid>
+
+                    
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <ComboBox ItemsSource="{Binding ListTickMin}" SelectedIndex="0" x:Name="ComboMin" Visibility="{Binding VisibleComboBoxMin}" Height="30">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged">
+                                    <i:InvokeCommandAction Command="{Binding CommandSelectedMin}" CommandParameter="{Binding  ElementName=ComboMin }" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+
+                        </ComboBox>
+                        <Button Style="{StaticResource BtnTickType}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Lang.LMin}" Command="{Binding CommandSelectedTickType}" CommandParameter="minutes"/>
+                        <Button Style="{StaticResource BtnTickType}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Lang.LDay}" Command="{Binding CommandSelectedTickType}" CommandParameter="days"/>
+                        <Button Style="{StaticResource BtnTickType}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Lang.LWeek}" Command="{Binding CommandSelectedTickType}" CommandParameter="weeks"/>
+                        <Button Style="{StaticResource BtnTickType}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Lang.LMonth}" Command="{Binding CommandSelectedTickType}" CommandParameter="months"/>
+                    </StackPanel>
+                </Grid>
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <!--ChartSideCursor -->
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="3"  x:Name="MyGridYSide" ClipToBounds="true">
+            <Canvas>
+                <ItemsControl ItemsSource="{Binding PrintChartYAxis}" >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemContainerStyle>
+                            <Style TargetType="ContentPresenter">
+                                <Setter Property="Canvas.Left" Value="{Binding X}"/>
+                                <Setter Property="Canvas.Top" Value="{Binding Y}"/>
+                            </Style>
+                        </ItemsControl.ItemContainerStyle>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Width="{Binding ElementName=MyGridYSide,Path=ActualWidth}" >
+                                <Polygon Points="10,0 0,8, 10,16" StrokeThickness="0" Fill="{Binding BackColor}" VerticalAlignment="Center" />
+                                <TextBlock Width="{Binding ElementName=MyGridYSide,Path=ActualWidth}"  Height="16" Text="{Binding CursorValue}" Foreground="{Binding Color}" Background="{Binding BackColor}" Padding="5,0,0,0"  VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+                            </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+            </Canvas>
+
+        </Grid>
+
+        
+        <!--Time-->
+        <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  x:Name="MyGridXSide" ClipToBounds="true">
+            <Canvas>
+
+                <ItemsControl ItemsSource="{Binding PrintChartXAxis}" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left" Value="{Binding X}"/>
+                            <Setter Property="Canvas.Top" Value="{Binding Y}"/>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Width="auto" >
+                                <Polygon Points="10,0 0,8, 10,16" StrokeThickness="0" Fill="{Binding BackColor}" VerticalAlignment="Center" />
+                                <TextBlock Width="auto"  Height="16" Text="{Binding CursorValue}" Foreground="{Binding Color}" Background="{Binding BackColor}" Padding="5,0,0,0"  VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Canvas>
+
+        </Grid>
+        
+        
+        <!--Chart-->
+        <Grid Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="mygrid" Background="Transparent">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDown">
+                    <i:InvokeCommandAction Command="{Binding DataContext.CommandMouseDown,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}"  PassEventArgsToCommand="True" />
+                </i:EventTrigger>
+                <i:EventTrigger EventName="MouseUp">
+                    <i:InvokeCommandAction Command="{Binding DataContext.CommandMouseUp,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" CommandParameter="{Binding ElementName=mygrid}"/>
+                </i:EventTrigger>
+                <i:EventTrigger EventName="MouseMove">
+                    <i:InvokeCommandAction Command="{Binding DataContext.CommandMouseMove,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}"  PassEventArgsToCommand="True" />
+                </i:EventTrigger>
+                <i:EventTrigger EventName="MouseLeave">
+                    <i:InvokeCommandAction Command="{Binding DataContext.CommandMouseLeave,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" CommandParameter="{Binding ElementName=mygrid}"/>
+                </i:EventTrigger> 
+                <i:EventTrigger EventName="MouseWheel">
+                    <i:InvokeCommandAction Command="{Binding DataContext.CommandMouseWheel,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" PassEventArgsToCommand="True"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <Canvas x:Name="mycanvas"  ClipToBounds="True"  >
+
+                <ItemsControl ItemsSource="{Binding HorLine}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line Style="{StaticResource HoverLine}" X1="{Binding FromX}" X2="{Binding ElementName=mycanvas,Path=ActualWidth}" Y1="{Binding FromY}" Y2="{Binding ToY}" Stroke="{Binding LineColor}" StrokeThickness="{Binding LineThickness}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding VerLine}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+
+                            <Line  Style="{StaticResource HoverLine}" X1="{Binding FromX}" X2="{Binding ToX}" Y1="{Binding FromY}" Y2="{Binding ElementName=mycanvas,Path=ActualHeight}" Stroke="{Binding LineColor}" StrokeThickness="{Binding LineThickness}">
+                            </Line>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+
+                <ItemsControl ItemsSource="{Binding PrintChartXAxis}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line  X1="{Binding X}" X2="{Binding X}" Y1="{Binding Y}" Y2="{Binding ElementName=mycanvas,Path=ActualHeight}" Stroke="{Binding BackColor}" StrokeThickness="1"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+
+                <ItemsControl ItemsSource="{Binding PrintTick}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas >
+
+                            </Canvas>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource CandleGridXWidthConverter}">
+                                        <Binding Path="DataContext.TickWidth" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                        <Binding Path="X" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Canvas.Top">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource MultipleYConverter}">
+                                        <Binding Path="DataContext.MaxPrice" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                        <Binding Path="HP" />
+                                        <Binding Path="DataContext.ChartTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid >
+                                <Rectangle VerticalAlignment="Top" Width="{Binding DataContext.TickWidth,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" Fill="{Binding Colors}" StrokeThickness="0">
+                                    <Rectangle.Height>
+                                        <MultiBinding Converter="{StaticResource MultipleHeightConverter}">
+                                            <Binding Path="DataContext.ChartTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                            <Binding Path="Candle" />
+                                        </MultiBinding>
+                                    </Rectangle.Height>
+                                    <Rectangle.Margin>
+                                        <MultiBinding Converter="{StaticResource CandleMarginConverter}">
+                                            <Binding Path="CandleStartPoint" />
+                                            <Binding Path="DataContext.ChartTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                        </MultiBinding>
+                                    </Rectangle.Margin>
+
+                                </Rectangle>
+                                <Rectangle Width="1" Fill="{Binding Colors}">
+                                    <Rectangle.Height>
+                                        <MultiBinding Converter="{StaticResource MultipleHeightConverter}">
+                                            <Binding Path="DataContext.ChartTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                            <Binding Path="Tail" />
+                                        </MultiBinding>
+                                    </Rectangle.Height>
+                                </Rectangle>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding PrintChartYAxis}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line  X1="{Binding X}" X2="{Binding ElementName=mycanvas,Path=ActualWidth}" Y1="{Binding Y,Converter={StaticResource ChartYAxisConverter}}" Y2="{Binding Y,Converter={StaticResource ChartYAxisConverter}}" Stroke="{Binding BackColor}" StrokeThickness="1"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+            </Canvas>
+        </Grid>
+
+        
+        <!--Volume 차트-->
+        <Grid Grid.Row="3">
+            <Canvas x:Name="myvolumecanvas"  ClipToBounds="True"  >
+
+                <ItemsControl ItemsSource="{Binding HorLine}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line Style="{StaticResource HoverLine}" X1="{Binding FromX}" X2="{Binding ElementName=myvolumecanvas,Path=ActualWidth}" Y1="{Binding FromY}" Y2="{Binding ToY}" Stroke="{Binding LineColor}" StrokeThickness="{Binding LineThickness}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding VerLine}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+
+                            <Line  Style="{StaticResource HoverLine}" X1="{Binding FromX}" X2="{Binding ToX}" Y1="{Binding FromY}" Y2="{Binding ElementName=myvolumecanvas,Path=ActualHeight}" Stroke="{Binding LineColor}" StrokeThickness="{Binding LineThickness}">
+                            </Line>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding PrintTick}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource CandleGridXWidthConverter}">
+                                        <Binding Path="DataContext.TickWidth" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                        <Binding Path="X" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Canvas.Top">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource MultipleYConverter}">
+                                        <Binding Path="DataContext.MaxVolume" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                        <Binding Path="Volume" />
+                                        <Binding Path="DataContext.VolumeTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid >
+                                <Rectangle VerticalAlignment="Top" Width="{Binding DataContext.TickWidth,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" Fill="{Binding Colors}" StrokeThickness="0">
+                                    <Rectangle.Height>
+                                        <MultiBinding Converter="{StaticResource MultipleHeightConverter}">
+                                            <Binding Path="DataContext.VolumeTickHeight" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}" />
+                                            <Binding Path="Volume" />
+                                        </MultiBinding>
+                                    </Rectangle.Height>
+
+
+                                </Rectangle>
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding PrintChartXAxis}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line  X1="{Binding X}" X2="{Binding X}" Y1="{Binding Y}" Y2="{Binding ElementName=mycanvas,Path=ActualHeight}" Stroke="{Binding BackColor}" StrokeThickness="1"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+            </Canvas>
+        </Grid>
+    </Grid>
+    
+    
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="SizeChanged">
+            <i:InvokeCommandAction Command="{Binding CommandGridLines}" CommandParameter="{Binding ElementName=mygrid}" />
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding CommandGridLines}" CommandParameter="{Binding ElementName=mygrid}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+</UserControl>

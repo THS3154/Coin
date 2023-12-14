@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\buildTransitive\Xamarin.Forms.targets" Condition="Exists('C:\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\buildTransitive\Xamarin.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json\7.0.2\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\7.0.2\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)prism.container.abstractions\9.0.61-pre\buildTransitive\Prism.Container.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)prism.container.abstractions\9.0.61-pre\buildTransitive\Prism.Container.Abstractions.targets')" />
+    <Import Project="$(NuGetPackageRoot)prism.core\9.0.271-pre\buildTransitive\Prism.Core.targets" Condition="Exists('$(NuGetPackageRoot)prism.core\9.0.271-pre\buildTransitive\Prism.Core.targets')" />
+  </ImportGroup>
+</Project>

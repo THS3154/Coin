@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoinLogin\CoinLogin.csproj" />
+    <ProjectReference Include="..\FileIO\FileIO.csproj" />
+    <ProjectReference Include="..\Network\Network.csproj" />
+    <ProjectReference Include="..\Permission\Permission.csproj" />
+    <ProjectReference Include="..\PublicColor\PublicColor.csproj" />
+    <ProjectReference Include="..\Setting\Setting.csproj" />
+    <ProjectReference Include="..\TitleBar\TitleBar.csproj" />
+    <ProjectReference Include="..\Upbit\Upbit.csproj" />
+  </ItemGroup>
+</Project>

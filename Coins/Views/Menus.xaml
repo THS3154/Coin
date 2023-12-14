@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Coins.Views.Menus"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Menu>
+            <MenuItem Header="{Binding Lang.LAccess}" ItemsSource="{Binding AccessMenu}">
+                <MenuItem.ItemContainerStyle>
+                    <Style TargetType="MenuItem">
+                        <Setter Property="Header" Value="{Binding Header}"/>
+                        <Setter Property="Command" Value="{Binding Command}"/>
+                        <Setter Property="IsEnabled" Value="{Binding IsEnable}"/>
+                        <Setter Property="Visibility" Value="{Binding IsVisible}"/>
+                        <Setter Property="ItemsSource" Value="{Binding ChildMenuItems}"/>
+                    </Style>
+                </MenuItem.ItemContainerStyle>
+            </MenuItem>
+
+            <MenuItem Header="{Binding Lang.LSetting}" ItemsSource="{Binding SettingMenu}">
+                <MenuItem.ItemContainerStyle>
+                    <Style TargetType="MenuItem">
+                        <Setter Property="Header" Value="{Binding Header}"/>
+                        <Setter Property="Command" Value="{Binding Command}"/>
+                        <Setter Property="CommandParameter" Value="{Binding}"/>
+                        <Setter Property="IsEnabled" Value="{Binding IsEnable}"/>
+                        <Setter Property="Visibility" Value="{Binding IsVisible}"/>
+                        <Setter Property="IsChecked" Value="{Binding IsChecked}"/>
+                        <Setter Property="ItemsSource" Value="{Binding ChildMenuItems}"/>
+                    </Style>
+                </MenuItem.ItemContainerStyle>
+            </MenuItem>
+
+        </Menu>
+    </Grid>
+</UserControl>

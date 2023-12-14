@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QZUsvdoombmk2jYwpBcsQMnMc6ovtb74Vh38mITdFEhd4OVTy31at0M63bFtrmifeR0Eoy/PBfv6SNp3/5LHoA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dldyd\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}

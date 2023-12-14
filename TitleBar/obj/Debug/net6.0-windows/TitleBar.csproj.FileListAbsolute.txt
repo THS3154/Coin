@@ -1,0 +1,17 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar_MarkupCompile.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar_MarkupCompile.lref
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\refint\TitleBar.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\bin\Debug\net6.0-windows\TitleBar.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\bin\Debug\net6.0-windows\TitleBar.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\bin\Debug\net6.0-windows\TitleBar.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBarView.baml
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.g.resources
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\TitleBar.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TitleBar\obj\Debug\net6.0-windows\ref\TitleBar.dll

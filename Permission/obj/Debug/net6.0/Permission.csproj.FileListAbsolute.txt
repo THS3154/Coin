@@ -1,0 +1,12 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\Permission.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\Permission.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\Permission.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\refint\Permission.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\ref\Permission.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.csproj.AssemblyReference.cache

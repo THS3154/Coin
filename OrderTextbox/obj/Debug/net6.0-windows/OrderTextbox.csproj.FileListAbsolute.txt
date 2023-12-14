@@ -1,0 +1,16 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\bin\Debug\net6.0-windows\OrderTextbox.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\bin\Debug\net6.0-windows\OrderTextbox.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\bin\Debug\net6.0-windows\OrderTextbox.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox_MarkupCompile.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox_MarkupCompile.lref
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\ROrderTextbox.baml
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.g.resources
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\refint\OrderTextbox.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\OrderTextbox.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\OrderTextbox\obj\Debug\net6.0-windows\ref\OrderTextbox.dll

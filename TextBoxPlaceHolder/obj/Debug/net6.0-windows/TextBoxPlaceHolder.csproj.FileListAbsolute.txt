@@ -1,0 +1,17 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\bin\Debug\net6.0-windows\TextBoxPlaceHolder.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\bin\Debug\net6.0-windows\TextBoxPlaceHolder.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\bin\Debug\net6.0-windows\TextBoxPlaceHolder.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder_MarkupCompile.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder_MarkupCompile.lref
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\RTextBoxPlaceHolder.baml
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.g.resources
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\refint\TextBoxPlaceHolder.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\TextBoxPlaceHolder.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\ref\TextBoxPlaceHolder.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\TextBoxPlaceHolder\obj\Debug\net6.0-windows\RPasswordPlaceHolder.baml

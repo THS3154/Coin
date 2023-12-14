@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DB\DB.csproj" />
+    <ProjectReference Include="..\Network\Network.csproj" />
+    <ProjectReference Include="..\Permission\Permission.csproj" />
+    <ProjectReference Include="..\TextBoxPlaceHolder\TextBoxPlaceHolder.csproj" />
+    <ProjectReference Include="..\Upbit\Upbit.csproj" />
+  </ItemGroup>
+</Project>

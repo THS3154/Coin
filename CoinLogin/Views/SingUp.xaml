@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="CoinLogin.Views.SingUp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+                          xmlns:tp="clr-namespace:TextBoxPlaceHolder;assembly=TextBoxPlaceHolder"
+             Width="350" 
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="pack://application:,,,/TextBoxplaceHolder;component/RTextBoxPlaceHolder.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/TextBoxplaceHolder;component/RPasswordPlaceHolder.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/CoinLogin;component/MyResource.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <Border CornerRadius="15" BorderThickness="0" BorderBrush="Black" >
+        <Border CornerRadius="10" BorderThickness="6">
+            <Grid x:Name="MainGrid"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                    <TextBlock Text="회원가입" Style="{StaticResource logintitleText}" Margin="0 0 0 20"/>
+                    <tp:CTextBoxPlaceHolder Margin="0 0 0 10"  Style="{StaticResource ResourceKey=TextBoxPlaceHolder}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="50"  TextValue="{Binding Name,Mode=TwoWay}"   PlaceHolder="NAME"/>
+                    <tp:CTextBoxPlaceHolder Margin="0 0 0 10"  Style="{StaticResource ResourceKey=TextBoxPlaceHolder}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="50"  TextValue="{Binding ID,Mode=TwoWay}"   PlaceHolder="ID"/>
+                    <tp:CPasswordBoxPlaceHolder Margin="0 0 0 10"  Style="{StaticResource ResourceKey=PasswordPlaceHolder}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="50" TextValue="{Binding PW,Mode=TwoWay}" PlaceHolder="PW"/>
+                    <tp:CPasswordBoxPlaceHolder Margin="0 0 0 10"  Style="{StaticResource ResourceKey=PasswordPlaceHolder}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="50" TextValue="{Binding RePW,Mode=TwoWay}" PlaceHolder="RE-PW"/>
+                    <tp:CTextBoxPlaceHolder Margin="0 0 0 10"  Style="{StaticResource ResourceKey=TextBoxPlaceHolder}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="50"  TextValue="{Binding Email,Mode=TwoWay}"   PlaceHolder="EMAIL"/>
+                    <Button Margin="0 10 0 10" Style="{StaticResource ResourceKey=loginbutton}" Grid.Column="1" Command="{Binding CommandSinUp}" Content="회원가입" />
+
+                    <WrapPanel Margin="5" Grid.Column="0" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Bottom">
+                        <Button Style="{StaticResource ResourceKey=btnsub}" Command="{Binding CommandNavigationBack}" Content="뒤로가기"></Button>
+                    </WrapPanel>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+
+    </Border>
+
+</UserControl>

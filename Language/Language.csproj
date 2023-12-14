@@ -1,0 +1,126 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="en\Balance.Designer.cs">
+      <DependentUpon>Balance.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="en\Dialog.Designer.cs">
+      <DependentUpon>Dialog.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="en\Menu.Designer.cs">
+      <DependentUpon>Menu.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="en\PublicCoin.Designer.cs">
+      <DependentUpon>PublicCoin.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="en\Upbit.Designer.cs">
+      <DependentUpon>Upbit.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="kr\Balance.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Balance.resx</DependentUpon>
+    </Compile>
+    <Compile Update="kr\Dialog.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Dialog.resx</DependentUpon>
+    </Compile>
+    <Compile Update="kr\Menu.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Menu.resx</DependentUpon>
+    </Compile>
+    <Compile Update="kr\PublicCoin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PublicCoin.resx</DependentUpon>
+    </Compile>
+    <Compile Update="kr\Message.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Message.resx</DependentUpon>
+    </Compile>
+    <Compile Update="kr\Upbit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Upbit.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="en\Balance.resx">
+      <LastGenOutput>Balance.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="en\Dialog.resx">
+      <LastGenOutput>Dialog.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="en\Menu.resx">
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="en\PublicCoin.resx">
+      <LastGenOutput>PublicCoin.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="en\Upbit.resx">
+      <LastGenOutput>Upbit.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\Balance.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Balance.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\Dialog.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dialog.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\Menu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\PublicCoin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PublicCoin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\Message.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Message.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="kr\Upbit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Upbit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Public\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileIO\FileIO.csproj" />
+  </ItemGroup>
+
+</Project>

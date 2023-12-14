@@ -1,0 +1,17 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\DB.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\DB.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\DB.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\FileIO.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\Network.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\FileIO.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\bin\Debug\net6.0\Network.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.csproj.CopyComplete
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\refint\DB.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\DB.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\DB\obj\Debug\net6.0\ref\DB.dll

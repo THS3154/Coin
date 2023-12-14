@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "he8uBJhX/nVIw500S4v5flnTXVa6/U1eyiUmYmU/VUTtwD4VoVP2PWpUBEBTOyxjla0/40QjdVWjmYLLxpiDRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dldyd\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\dldyd\\.nuget\\packages\\pixieditor.colorpicker\\3.4.1\\pixieditor.colorpicker.3.4.1.nupkg.sha512",
+    "C:\\Users\\dldyd\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}

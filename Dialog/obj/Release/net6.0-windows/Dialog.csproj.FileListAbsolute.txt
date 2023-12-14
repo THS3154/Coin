@@ -1,0 +1,12 @@
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\bin\Release\net6.0-windows\Dialog.deps.json
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\bin\Release\net6.0-windows\Dialog.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\bin\Release\net6.0-windows\Dialog.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.AssemblyInfoInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.AssemblyInfo.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.csproj.CoreCompileInputs.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\refint\Dialog.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\Dialog.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Dialog\obj\Release\net6.0-windows\ref\Dialog.dll
