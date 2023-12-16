@@ -17,6 +17,8 @@ using Language.Lang;
 using System.Windows.Media;
 using System.Drawing;
 using PublicColor.View;
+using Permission;
+using Prism.Events;
 
 namespace Coins.ViewModels
 {
@@ -79,6 +81,10 @@ namespace Coins.ViewModels
         IDialogService Dialog;
         #endregion EndPrism
 
+        #region Auth
+        private PM _pm;
+        #endregion
+
         /// <summary>
         /// 메뉴 생성
         /// </summary>
@@ -128,7 +134,8 @@ namespace Coins.ViewModels
         }
         private void ShowUpbitAccess()
         {
-            Dialog.ShowDialog("DialogAccess");
+            if(_pm.AuthCheck("업비트API KEY등록"))
+                Dialog.ShowDialog("DialogAccess");
         }
 
         private void ColorChangeTest()
@@ -151,11 +158,11 @@ namespace Coins.ViewModels
             //PublicColor.Colors.Colorinstance.back = "FF0000";
             //PublicColor.Colors.Colorinstance.SetColor();
         }
-        public MenusViewModel(IDialogService dialog)
+        public MenusViewModel(IDialogService dialog, IEventAggregator ea, PM pm)
         {
             //언어등록
             SetLanguage();
-
+            _pm = pm;
             Dialog = dialog;
 
             //언어 변경 이벤트추가

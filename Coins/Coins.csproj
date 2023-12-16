@@ -3,13 +3,18 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>coin-_1_.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="coin-_1_.ico" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoinLogin\CoinLogin.csproj" />
     <ProjectReference Include="..\CustomScrollbar\CustomScrollbar.csproj" />
+    <ProjectReference Include="..\DB\DB.csproj" />
     <ProjectReference Include="..\FileIO\FileIO.csproj" />
     <ProjectReference Include="..\Network\Network.csproj" />
     <ProjectReference Include="..\Permission\Permission.csproj" />
@@ -17,5 +22,18 @@
     <ProjectReference Include="..\Setting\Setting.csproj" />
     <ProjectReference Include="..\TitleBar\TitleBar.csproj" />
     <ProjectReference Include="..\Upbit\Upbit.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

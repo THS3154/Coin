@@ -8,6 +8,9 @@ using Setting;
 using System.Windows;
 using Upbit;
 using Permission;
+using Coins.Views;
+using PublicColor.Model;
+using PublicColor.View;
 
 namespace Coins
 {
@@ -25,7 +28,15 @@ namespace Coins
         {
             //메뉴 등록
             containerRegistry.RegisterForNavigation<Menus, MenusViewModel>();
-            containerRegistry.RegisterForNavigation<Coins.Views.Upbit, UpbitViewModel>();
+            containerRegistry.RegisterForNavigation<SideMenu, SideMenuViewModel>();
+            containerRegistry.RegisterForNavigation<Main, MainViewModel>();
+
+            containerRegistry.RegisterForNavigation<DashboardViewer, DashboardViewerViewModel>();
+            containerRegistry.RegisterForNavigation<SettingViewer, SettingViewerViewModel>();
+            containerRegistry.RegisterForNavigation<UpbitViewer, UpbitViewerViewModel>();
+
+            
+
             containerRegistry.RegisterSingleton<PM>();
         }
 

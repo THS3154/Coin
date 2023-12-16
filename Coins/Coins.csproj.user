@@ -7,7 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Upbit.xaml.cs">
+    <Compile Update="Views\DashboardViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SettingViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SideMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpbitViewer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Menus.xaml.cs">
@@ -15,7 +27,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\Upbit.xaml">
+    <Page Update="Views\DashboardViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SideMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpbitViewer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

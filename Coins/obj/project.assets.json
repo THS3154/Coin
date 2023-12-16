@@ -582,6 +582,26 @@
           }
         }
       },
+      "AdminSetting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CResource": "1.0.0",
+          "DB": "1.0.0",
+          "Permission": "1.0.0",
+          "Prism.Wpf": "8.1.97",
+          "PublicColor": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AdminSetting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AdminSetting.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "CoinLogin/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -590,6 +610,7 @@
           "Network": "1.0.0",
           "Permission": "1.0.0",
           "Prism.Wpf": "8.1.97",
+          "PublicColor": "1.0.0",
           "TextBoxPlaceHolder": "1.0.0",
           "Upbit": "1.0.0"
         },
@@ -598,6 +619,22 @@
         },
         "runtime": {
           "bin/placeholder/CoinLogin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CResource/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PublicColor": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CResource.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CResource.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -701,6 +738,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DB": "1.0.0",
           "Prism.Core": "8.1.97"
         },
         "compile": {
@@ -732,6 +770,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AdminSetting": "1.0.0",
+          "CResource": "1.0.0",
           "Dialog": "1.0.0",
           "Language": "1.0.0",
           "Prism.Wpf": "8.1.97",
@@ -780,6 +820,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CResource": "1.0.0",
           "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
@@ -2266,10 +2307,20 @@
         "websocketsharp-netstandard.nuspec"
       ]
     },
+    "AdminSetting/1.0.0": {
+      "type": "project",
+      "path": "../AdminSetting/AdminSetting.csproj",
+      "msbuildProject": "../AdminSetting/AdminSetting.csproj"
+    },
     "CoinLogin/1.0.0": {
       "type": "project",
       "path": "../CoinLogin/CoinLogin.csproj",
       "msbuildProject": "../CoinLogin/CoinLogin.csproj"
+    },
+    "CResource/1.0.0": {
+      "type": "project",
+      "path": "../CResource/CResource.csproj",
+      "msbuildProject": "../CResource/CResource.csproj"
     },
     "CustomScrollbar/1.0.0": {
       "type": "project",
@@ -2341,6 +2392,7 @@
     "net6.0-windows7.0": [
       "CoinLogin >= 1.0.0",
       "CustomScrollbar >= 1.0.0",
+      "DB >= 1.0.0",
       "FileIO >= 1.0.0",
       "Network >= 1.0.0",
       "Permission >= 1.0.0",
@@ -2392,6 +2444,9 @@
             },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj"
+            },
+            "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj": {
+              "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj"
             },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"

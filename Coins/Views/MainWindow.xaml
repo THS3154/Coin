@@ -18,6 +18,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary  Source="pack://application:,,,/TitleBar;component/TitleBarView.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/PublicColor;component/DynamicColors.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -30,9 +31,13 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TitleBar:TitleBarModel Grid.Row="0" Style="{StaticResource ResourceKey=MyTitle}" ContentColor="Black" WindowForm="{x:Reference MyWindow}" BackColor="White" HoverBackColor="#FFCFE7FD" TitleName="{Binding Title}" />
 
-        <Border Grid.Row="1" Background="White">
+        <TitleBar:TitleBarModel Grid.Row="0"   Style="{StaticResource ResourceKey=MyTitle}" ContentColor="{DynamicResource TitleColor}" WindowForm="{x:Reference MyWindow}" 
+                                BackColor="{DynamicResource MainColor}" HoverBackColor="{DynamicResource MainHoverColor}" TitleName="{Binding Title}" />
+
+        
+        
+        <Border Grid.Row="1"  Background="White">
             <ContentControl  x:Name="RegionBase" prism:RegionManager.RegionName="Main" />
         </Border>
 

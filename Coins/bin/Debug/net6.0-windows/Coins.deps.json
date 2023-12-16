@@ -10,6 +10,7 @@
         "dependencies": {
           "CoinLogin": "1.0.0",
           "CustomScrollbar": "1.0.0",
+          "DB": "1.0.0",
           "FileIO": "1.0.0",
           "Network": "1.0.0",
           "Permission": "1.0.0",
@@ -340,17 +341,38 @@
           }
         }
       },
+      "AdminSetting/1.0.0": {
+        "dependencies": {
+          "CResource": "1.0.0",
+          "DB": "1.0.0",
+          "Permission": "1.0.0",
+          "Prism.Wpf": "8.1.97",
+          "PublicColor": "1.0.0"
+        },
+        "runtime": {
+          "AdminSetting.dll": {}
+        }
+      },
       "CoinLogin/1.0.0": {
         "dependencies": {
           "DB": "1.0.0",
           "Network": "1.0.0",
           "Permission": "1.0.0",
           "Prism.Wpf": "8.1.97",
+          "PublicColor": "1.0.0",
           "TextBoxPlaceHolder": "1.0.0",
           "Upbit": "1.0.0"
         },
         "runtime": {
           "CoinLogin.dll": {}
+        }
+      },
+      "CResource/1.0.0": {
+        "dependencies": {
+          "PublicColor": "1.0.0"
+        },
+        "runtime": {
+          "CResource.dll": {}
         }
       },
       "CustomScrollbar/1.0.0": {
@@ -405,6 +427,7 @@
       },
       "Permission/1.0.0": {
         "dependencies": {
+          "DB": "1.0.0",
           "Prism.Core": "8.1.97"
         },
         "runtime": {
@@ -423,6 +446,8 @@
       },
       "Setting/1.0.0": {
         "dependencies": {
+          "AdminSetting": "1.0.0",
+          "CResource": "1.0.0",
           "Dialog": "1.0.0",
           "Language": "1.0.0",
           "Prism.Wpf": "8.1.97",
@@ -447,6 +472,7 @@
       },
       "Upbit/1.0.0": {
         "dependencies": {
+          "CResource": "1.0.0",
           "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
@@ -733,7 +759,17 @@
       "path": "websocketsharp-netstandard/1.0.1",
       "hashPath": "websocketsharp-netstandard.1.0.1.nupkg.sha512"
     },
+    "AdminSetting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "CoinLogin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CResource/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

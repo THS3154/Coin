@@ -90,6 +90,7 @@ namespace Coins.ViewModels
             _ea.GetEvent<MessageTitleEvent>().Subscribe(SetTitle);
             //로그인창
             _rm.RegisterViewWithRegion("Main", typeof(CoinLogin.Views.LoginMain));
+            
             //MessageBox.Show(Network.Network.Connected.ToString());
 
 
