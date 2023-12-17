@@ -10,6 +10,7 @@
     <ProjectReference Include="..\DB\DB.csproj" />
     <ProjectReference Include="..\Network\Network.csproj" />
     <ProjectReference Include="..\Permission\Permission.csproj" />
+    <ProjectReference Include="..\PublicColor\PublicColor.csproj" />
     <ProjectReference Include="..\TextBoxPlaceHolder\TextBoxPlaceHolder.csproj" />
     <ProjectReference Include="..\Upbit\Upbit.csproj" />
   </ItemGroup>

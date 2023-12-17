@@ -17,7 +17,7 @@
     <Compile Update="Views\CoinView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\DialogAccess.xaml.cs">
+    <Compile Update="Views\AddAccess.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Chart.xaml.cs">
@@ -40,7 +40,7 @@
     <Page Update="Views\CoinView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\DialogAccess.xaml">
+    <Page Update="Views\AddAccess.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Chart.xaml">

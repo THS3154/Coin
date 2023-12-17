@@ -58,7 +58,7 @@ namespace Setting.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Setting;V1.0.0.0;component/views/dialogsettings.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Setting;component/views/dialogsettings.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\DialogSettings.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

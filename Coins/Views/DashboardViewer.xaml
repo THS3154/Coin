@@ -4,6 +4,6 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-            
+        <TextBlock Text="대시보드" FontSize="30"/>
     </Grid>
 </UserControl>

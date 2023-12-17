@@ -18,7 +18,6 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\View
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\BidAskList.g.cs
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\CoinList.g.cs
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\CoinOrder.g.cs
-C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\DialogAccess.g.cs
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Upbit_MarkupCompile.cache
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Upbit_MarkupCompile.lref
@@ -26,7 +25,6 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\View
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\BidAskList.baml
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\CoinList.baml
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\CoinOrder.baml
-C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\DialogAccess.baml
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Upbit.g.resources
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Upbit.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Upbit.AssemblyInfoInputs.cache
@@ -49,3 +47,9 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\Netw
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\Network.pdb
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\CustomScrollbar.dll
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\CustomScrollbar.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\DB.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\DB.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\AddAccess.g.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\obj\Debug\net6.0-windows\Views\AddAccess.baml
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\CResource.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Upbit\bin\Debug\net6.0-windows\CResource.pdb

@@ -8,6 +8,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary  Source="pack://application:,,,/CoinLogin;component/MyResource.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/PublicColor;component/DynamicColors.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>

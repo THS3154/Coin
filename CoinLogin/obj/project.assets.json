@@ -457,6 +457,22 @@
           }
         }
       },
+      "CResource/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PublicColor": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CResource.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CResource.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "CustomScrollbar/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -555,6 +571,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DB": "1.0.0",
           "Prism.Core": "8.1.97"
         },
         "compile": {
@@ -599,6 +616,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CResource": "1.0.0",
           "CustomScrollbar": "1.0.0",
           "Dialog": "1.0.0",
           "FileIO": "1.0.0",
@@ -1651,6 +1669,11 @@
         "websocketsharp-netstandard.nuspec"
       ]
     },
+    "CResource/1.0.0": {
+      "type": "project",
+      "path": "../CResource/CResource.csproj",
+      "msbuildProject": "../CResource/CResource.csproj"
+    },
     "CustomScrollbar/1.0.0": {
       "type": "project",
       "path": "../CustomScrollbar/CustomScrollbar.csproj",
@@ -1713,6 +1736,7 @@
       "Network >= 1.0.0",
       "Permission >= 1.0.0",
       "Prism.Wpf >= 8.1.97",
+      "PublicColor >= 1.0.0",
       "TextBoxPlaceHolder >= 1.0.0",
       "Upbit >= 1.0.0"
     ]
@@ -1761,6 +1785,9 @@
             },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj"
+            },
+            "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj": {
+              "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj"
             },
             "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj": {
               "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj"

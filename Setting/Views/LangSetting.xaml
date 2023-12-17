@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Setting.Views.LangSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="pack://application:,,,/PublicColor;component/DynamicColors.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/CResource;component/Themes/Buttons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <RadioButton Content="KR" IsChecked="{Binding KR}" />
+            <RadioButton Content="EN" IsChecked="{Binding EN}" />
+            <Button HorizontalAlignment="Right" Command="{Binding CommandUpdate}" Width="150" Style="{DynamicResource PublicButton}" Content="저장" ></Button>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

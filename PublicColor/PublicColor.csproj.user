@@ -7,6 +7,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="DynamicColors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\ColorView.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -61,6 +61,7 @@ namespace CoinLogin.ViewModels
             bool IsLoginCheck = false;
             string query = $"SELECT * FROM ACCOUNT WHERE ID = '{ID}' AND PW = '{PW}'";
             int UserNumber = 0;
+            int auth = 0;
             SqlDataReader read = Mssql.Instance.ExecuteReaderQuery(query);
             if(read is not null)
             {
@@ -69,6 +70,7 @@ namespace CoinLogin.ViewModels
                 {
                     username = read["USERNAME"].ToString();
                     UserNumber = Convert.ToInt32(read["NUMBER"]);
+                    auth = Convert.ToInt32(read["LEVEL"]);
                     IsLoginCheck = true;
 
                 }
@@ -77,13 +79,14 @@ namespace CoinLogin.ViewModels
                     //로그인 성공시 보냄
                     _pm.SetID(ID);
                     _pm.SetName(username);
+                    _pm.SetAuth(auth);
                     _ea.GetEvent<MessageTitleEvent>().Publish($"{username}님 환영합니다.");
                     //사용 후 꼭 닫아줘야함
                     read.Close();
 
                     query = $"INSERT INTO ACCESSLOG(USERNUMBER, IP, KST) VALUES({UserNumber}, '{Network.Network.GetPublicIP()}', {FncDateTime.DateTimeToInt(DateTime.Now)})";
                     Mssql.Instance.ExecuteNonQuery(query);
-                    _rm.RequestNavigate("Main", "Upbit");
+                    _rm.RequestNavigate("Main", "Main");
                 }
                 else
                 {
@@ -116,7 +119,7 @@ namespace CoinLogin.ViewModels
                 uint StartDay = FncDateTime.DateTimeToInt(time);
                 uint EndDay = FncDateTime.DateTimeToInt(time.AddDays(1));
 
-                string query = $"SELECT * FROM ACCESSLOG WHERE ({StartDay} <= KST AND KST < {EndDay}) AND IP ='{MyIP}'";
+                string query = $"SELECT * FROM ACCESSLOG WHERE ({StartDay} <= KST AND KST < {EndDay}) AND IP ='{MyIP}' AND USERNUMBER = 0";
 
                 bool IsNonMemberAccessCheck = Mssql.Instance.HasRows(query);    //접속기록 있을경우 true / 없을경우 false;
                 if (IsNonMemberAccessCheck)
@@ -129,10 +132,12 @@ namespace CoinLogin.ViewModels
                 {
                     //비회원 접속기록 보냄.
                     query = $"INSERT INTO ACCESSLOG(USERNUMBER, IP, KST) VALUES(0, '{MyIP}', {FncDateTime.DateTimeToInt(DateTime.Now)})";
-                    Mssql.Instance.ExecuteNonQuery(query);
+                    
+                    //테스트하기위해서 비회원 잠금기능 해제시켜둠 계속 DB날리기 너무 귀찮고 로그인하기도 귀찮음
+                    //Mssql.Instance.ExecuteNonQuery(query);
                 }
             }
-            _rm.RequestNavigate("Main", "Upbit");
+            _rm.RequestNavigate("Main", "Main");
             _ea.GetEvent<MessageTitleEvent>().Publish($"Upbit");
 
 

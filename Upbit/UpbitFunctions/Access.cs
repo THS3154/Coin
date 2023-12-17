@@ -107,7 +107,10 @@ namespace Upbit.UpbitFunctions
                 _Access = CheckedKey();
             }
             
-            CheckedAccess(_Access);
+            if(CheckedAccess is not null)
+            {
+                CheckedAccess(_Access);
+            }
         }
 
         private bool CheckedKey()
@@ -162,8 +165,11 @@ namespace Upbit.UpbitFunctions
             {
                 _Access = CheckedKey();
             }
-            CheckedAccess(_Access);
-            
+            if (CheckedAccess is not null)
+            {
+                CheckedAccess(_Access);
+            }
+
         }
 
         /// <summary>

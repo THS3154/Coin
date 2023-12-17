@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Upbit.Views.AddAccess"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"          
+             xmlns:conv ="clr-namespace:Upbit.Converter"
+             xmlns:tp="clr-namespace:TextBoxPlaceHolder;assembly=TextBoxPlaceHolder"
+             MinWidth="600"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/TextBoxplaceHolder;component/RTextBoxPlaceHolder.xaml"/>
+                <ResourceDictionary  Source="pack://application:,,,/CResource;component/Themes/Buttons.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/PublicColor;component/DynamicColors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="StackPanel">
+                <Setter Property="Margin" Value="0,0,0,10" />
+                <Setter Property="Orientation" Value="Horizontal"/>
+            </Style>
+
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
+
+    <Grid x:Name="MainGrid" Margin="5" >
+        <StackPanel Orientation="Vertical">
+            <tp:CTextBoxPlaceHolder  Style="{StaticResource ResourceKey=TextBoxPlaceHolder}" x:Name="TextBox" HorizontalAlignment="Stretch" Height="50" Width="auto" Margin="2" TextValue="{Binding AccessKey,Mode=TwoWay}" VerticalAlignment="Top"  PlaceHolder="AccessKey"/>
+            <tp:CTextBoxPlaceHolder  Style="{StaticResource ResourceKey=TextBoxPlaceHolder}" x:Name="CTextBox" HorizontalAlignment="Stretch" Height="50"  Margin="2" TextValue="{Binding SecretKey,Mode=TwoWay}" VerticalAlignment="Top"  PlaceHolder="SecretKey"/>
+            <Button Style="{DynamicResource PublicButton}" Width="150" Command="{Binding CloseDialogCommand}" CommandParameter="true" Content="{Binding Lang.LYes}"  HorizontalAlignment="Right" Margin="0,10,0,0" Grid.Row="1" Grid.Column="1" IsDefault="True" />
+        </StackPanel>
+
+    </Grid>
+</UserControl>

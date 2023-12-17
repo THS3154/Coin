@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-1772313354
+2-1361820295
 
 6-948304196
 198516576970
-View\ColorView.xaml;
+DynamicColors.xaml;View\ColorView.xaml;
 
-True
+False
 

@@ -1,11 +1,13 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using Setting.ViewModels;
-using Setting.Views;
 using PublicColor.View;
 using PublicColor.Model;
 using System.Windows.Navigation;
+using Setting.Views;
+using Setting.ViewModels;
+using AdminSetting.Views;
+using AdminSetting.ViewModels;
 
 namespace Setting
 {
@@ -24,10 +26,11 @@ namespace Setting
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterDialog<DialogSettings, DialogSettingsViewModel>();
-            containerRegistry.RegisterForNavigation<ColorView,ColorModel>();
 
-            
+            containerRegistry.RegisterForNavigation<ColorView, ColorModel>();
+            containerRegistry.RegisterForNavigation<MarketList, MarketListViewModel>();
+            containerRegistry.RegisterForNavigation<LangSetting, LangSettingViewModel>();
+
         }
     }
 }

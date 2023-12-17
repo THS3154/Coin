@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DB;
+using System;
+using System.Data.SqlClient;
 
 namespace Permission
 {
@@ -13,6 +15,8 @@ namespace Permission
         #endregion
 
         #region Values
+        private int Admin = 9999;
+
         //이름
         public string Name { get; private set; }
 
@@ -20,7 +24,7 @@ namespace Permission
         public string ID { get; private set; }
 
         /// <summary>
-        /// 권한 등급 값 Base = 0
+        /// 권한 등급 값 Base = 0 / 회원 1 / 어드민 9999
         /// </summary>
         public int Auth { get; private set; }
 
@@ -28,7 +32,6 @@ namespace Permission
         public List<SAuth> AuthList { get; private set; }
         
         //내가 가진 권한들
-        public List<SAuth> MyAuth { get; private set; }
 
         #endregion
 
@@ -38,8 +41,7 @@ namespace Permission
         /// </summary>
         public PM()
         {
-            MyAuth = new List<SAuth>();
-            AuthList = new List<SAuth>();
+            AuthList = GetAuthList();
             Auth = 0;
             ID = "";
             Name = "";
@@ -47,13 +49,59 @@ namespace Permission
 
 
         #region AuthList Functions
+
+        private List<SAuth> GetAuthList()
+        {
+            List<SAuth> list = new List<SAuth>();
+            string query = $"SELECT * FROM AUTHLIST";
+            
+            SqlDataReader read = Mssql.Instance.ExecuteReaderQuery(query);
+            if(read is not null)
+            {
+                while (read.Read())
+                {
+                    SAuth at = new SAuth();
+                    at.AuthName = read["NAME"].ToString();
+                    at.AuthLevel = Convert.ToInt32(read["LEVEL"]);
+                    at.IsEnable = Convert.ToBoolean(read["ENABLE"]);
+                    at.IsShow = (Convert.ToBoolean(read["SHOW"]) ? 0 : 2);
+
+                    list.Add(at);
+                }
+                read.Close();//읽어온 쿼리 닫음.
+            }
+            else
+            {
+                //DB연결 없을때 오픈된 설정만 등록
+                //최소한 기능만 추가
+                SAuth at = new SAuth();
+                at.AuthName = "업비트API KEY등록";
+                at.AuthLevel = 0;
+                at.IsEnable = true;
+                at.IsShow = 1;
+
+                list.Add(at);
+
+                at.AuthName = "색 변경";
+                list.Add(at);
+
+                at.AuthName = "언어 변경";
+                list.Add(at);
+                
+            }
+            
+
+
+            return list;
+        }
+
         /// <summary>
         /// 권한목록 추가
         /// </summary>
         /// <param name="auth">추가될 권한</param>
         public void AddAuthList(SAuth auth)
         {
-            AuthList.Add(auth);
+            AuthList = GetAuthList();
             AllAuthListChange(auth);
         }
 
@@ -68,24 +116,6 @@ namespace Permission
         }
         #endregion
 
-        #region MyAuth Functions
-        /// <summary>
-        /// 개인권한 추가
-        /// </summary>
-        /// <param name="auth"></param>
-        public void AddMyAuth(SAuth auth)
-        {
-            MyAuth.Add(auth);
-            MyAuthChange(auth);
-        }
-
-        public void RemoveMyAuth(SAuth auth)
-        {
-            MyAuth.Remove(auth);
-            MyAuthChange(auth);
-        }
-
-        #endregion
 
         #region Info Functions
         /// <summary>
@@ -105,6 +135,10 @@ namespace Permission
         {
             this.ID = id;
         }
+        public void SetAuth(int auth)
+        {
+            this.Auth = auth;
+        }
         #endregion
 
         #region Active Functions
@@ -114,11 +148,37 @@ namespace Permission
         /// </summary>
         /// <param name="auth">활성화 체크할 변수</param>
         /// <returns></returns>
-        public bool ActiveAuth(SAuth auth)
+        public bool AuthCheck(string authname)
         {
-            return MyAuth.Contains(auth);
+            SAuth auth = new SAuth();
+            bool _b = false;
+            foreach(var i in AuthList)
+            {
+                if(i.AuthName == authname)
+                {
+                    auth = i;
+                    break;
+                }
+            }
+            if(auth.AuthName != "" && auth.AuthName is not null)
+            {
+                if (this.Auth >= auth.AuthLevel)
+                {
+                    _b = true;
+                }
+            }
+            
+            return _b;
+            
         }
 
+        public bool AdminCheck()
+        {
+            bool _b = false;
+            if (Auth >= Admin)
+                _b = true;
+            return _b;
+        }
 
         //서버에서 특정 기능을 닫을 함수를 추가 할 예정
 

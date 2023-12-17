@@ -10,3 +10,10 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\refint\
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.pdb
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\ref\Permission.dll
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.csproj.AssemblyReference.cache
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\DB.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\FileIO.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\Network.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\DB.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\FileIO.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\bin\Debug\net6.0\Network.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\Permission\obj\Debug\net6.0\Permission.csproj.CopyComplete

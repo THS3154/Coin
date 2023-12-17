@@ -10,10 +10,19 @@
     <UserControl.DataContext>
         <vm:ColorModel/>
     </UserControl.DataContext>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="pack://application:,,,/PublicColor;component/DynamicColors.xaml" />
+                <ResourceDictionary  Source="pack://application:,,,/CResource;component/Themes/Buttons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <ListView Grid.Row="0" ItemsSource="{Binding MyColors}">
             <ListView.ItemContainerStyle>
@@ -34,7 +43,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Grid.Row="1" Command="{Binding CommandSaveColors}" Content="저장"/>
+        <Button Grid.Row="1" Style="{DynamicResource PublicButton }" Command="{Binding CommandSaveColors}" Content="저장"/>
 
 
     </Grid>

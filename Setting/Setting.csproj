@@ -7,6 +7,8 @@
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdminSetting\AdminSetting.csproj" />
+    <ProjectReference Include="..\CResource\CResource.csproj" />
     <ProjectReference Include="..\Dialog\Dialog.csproj" />
     <ProjectReference Include="..\Language\Language.csproj" />
     <ProjectReference Include="..\PublicColor\PublicColor.csproj" />

@@ -1,0 +1,99 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CResource/1.0.0": {
+        "dependencies": {
+          "PublicColor": "1.0.0"
+        },
+        "runtime": {
+          "CResource.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.31.10800"
+          }
+        }
+      },
+      "PixiEditor.ColorPicker/3.4.1": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ColorPicker.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.1.0"
+          }
+        }
+      },
+      "Prism.Core/8.1.97": {
+        "runtime": {
+          "lib/net5.0/Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        }
+      },
+      "FileIO/1.0.0": {
+        "runtime": {
+          "FileIO.dll": {}
+        }
+      },
+      "PublicColor/1.0.0": {
+        "dependencies": {
+          "FileIO": "1.0.0",
+          "PixiEditor.ColorPicker": "3.4.1",
+          "Prism.Core": "8.1.97"
+        },
+        "runtime": {
+          "PublicColor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CResource/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LZpuf82ACZWldmfMuv3CTUMDh3o0xo0uHUaybR5HgqVLDBJJ9RZLykplQ/bTJd0/VDt3EhD4iDgUgbdIUAM+Kg==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.31",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512"
+    },
+    "PixiEditor.ColorPicker/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n7T1+ZN28Nfy9OoAJB0NpxCFZTBNjlm+EXKnVVLTIaiHTaeJTxwgt52uAf4jL17ynDP2vbqdneMCUmjAFHH+HA==",
+      "path": "pixieditor.colorpicker/3.4.1",
+      "hashPath": "pixieditor.colorpicker.3.4.1.nupkg.sha512"
+    },
+    "Prism.Core/8.1.97": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
+      "path": "prism.core/8.1.97",
+      "hashPath": "prism.core.8.1.97.nupkg.sha512"
+    },
+    "FileIO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PublicColor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

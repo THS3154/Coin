@@ -127,7 +127,10 @@ namespace Language
                 SaveLang();
 
                 //언어 변경 이벤트처리
-                LangChangeEvent();
+                if(LangChangeEvent is not null)
+                {
+                    LangChangeEvent();
+                }
             }
 
             

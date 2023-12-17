@@ -43,3 +43,5 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\PublicColor.pdb
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\CustomScrollbar.dll
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\CustomScrollbar.pdb
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\CResource.dll
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\CoinLogin\bin\Debug\net6.0-windows\CResource.pdb

@@ -1,0 +1,905 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj",
+        "projectName": "CoinLogin",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\CoinLogin.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CoinLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\Upbit.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\Upbit.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj",
+        "projectName": "CustomScrollbar",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj",
+        "projectName": "DB",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj",
+        "projectName": "Dialog",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj",
+        "projectName": "FileIO",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\Language.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\Language.csproj",
+        "projectName": "Language",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\Language.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj",
+        "projectName": "Network",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\OrderTextbox.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\OrderTextbox.csproj",
+        "projectName": "OrderTextbox",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\OrderTextbox.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj",
+        "projectName": "Permission",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\DB\\DB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj",
+        "projectName": "PublicColor",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "PixiEditor.ColorPicker": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj",
+        "projectName": "TextBoxPlaceHolder",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\Upbit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\Upbit.csproj",
+        "projectName": "Upbit",
+        "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\Upbit.csproj",
+        "packagesPath": "C:\\Users\\dldyd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Upbit\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dldyd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\CustomScrollbar\\CustomScrollbar.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Dialog\\Dialog.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\FileIO\\FileIO.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\Language.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Language\\Language.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Network\\Network.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\OrderTextbox.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\OrderTextbox\\OrderTextbox.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\Permission\\Permission.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\PublicColor\\PublicColor.csproj"
+              },
+              "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj": {
+                "projectPath": "C:\\Users\\dldyd\\Desktop\\WPF코드\\Prism\\Coins\\TextBoxPlaceHolder\\TextBoxPlaceHolder.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.32.2, )"
+            },
+            "WebSocketSharp-netstandard": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

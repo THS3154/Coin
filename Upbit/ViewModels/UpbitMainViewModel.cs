@@ -33,7 +33,14 @@ namespace Upbit.ViewModels
             
 
             Debug.WriteLine(pm.ToString());
-            //gggrm.RegisterViewWithRegion("ContentRegion3", typeof(CoinList));
+            
+        
+        
+        
+            //rm.RegisterViewWithRegion("CRMenu", typeof(CoinList));
+            rm.RegisterViewWithRegion("CRBalance", typeof(CoinList));
+            rm.RegisterViewWithRegion("CRCoinList", typeof(CoinList));
+            rm.RegisterViewWithRegion("CRCoinView", typeof(CoinList));
         }
     }
 }

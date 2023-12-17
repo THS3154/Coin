@@ -11,6 +11,7 @@
     <PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CResource\CResource.csproj" />
     <ProjectReference Include="..\CustomScrollbar\CustomScrollbar.csproj" />
     <ProjectReference Include="..\Dialog\Dialog.csproj" />
     <ProjectReference Include="..\FileIO\FileIO.csproj" />

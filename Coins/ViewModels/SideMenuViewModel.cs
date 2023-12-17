@@ -206,7 +206,8 @@ namespace Coins.ViewModels
                     val.MarketName = read["NAME"].ToString();
                     val.Number = Convert.ToInt32(read["NUMBER"]);
                     val.Viewer = read["VIEWNAME"].ToString();
-                    if (read["IMGSIZE"] is not null)
+                    
+                    if (Convert.ToInt32(read["IMGSIZE"]) != 0)
                     {
                         object imagebytes = read["IMG"];
                         val.Image = ByteArrayToBitmapImage((byte[])imagebytes);

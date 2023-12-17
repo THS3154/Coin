@@ -34,7 +34,7 @@ namespace Upbit
             containerRegistry.RegisterForNavigation<BidAskList, BidAskListViewModel>();
             containerRegistry.RegisterForNavigation<CoinOrder, CoinOrderViewModel>();
 
-            containerRegistry.RegisterDialog<DialogAccess, DialogAccessViewModel>();
+            containerRegistry.RegisterDialog<AddAccess, AddAccessViewModel>();
         }
     }
 }

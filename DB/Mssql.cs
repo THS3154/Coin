@@ -73,6 +73,14 @@ namespace DB
             }
         }
 
+        public int ExecuteNonQuery(string query,string str, byte[] bytes)
+        {
+            lock (this)
+            {
+                return Execute_NonQuery(query,str,bytes);
+            }
+        }
+
         public bool HasRows(string query)
         {
             lock (this)
@@ -155,6 +163,31 @@ namespace DB
             
         }
 
+
+        private int Execute_NonQuery(string query,string str, byte[] bytes)
+        {
+            int result = (int)ExcuteResult.Fail;
+
+            try
+            {
+                _sqlCmd = new SqlCommand();
+                _sqlCmd.Connection = this.Connection;
+                _sqlCmd.Parameters.AddWithValue(str, bytes);
+                _sqlCmd.CommandText = query;
+                result = _sqlCmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                string msg = string.Format("{0}\r\nMessage : {1}", ex.StackTrace, ex.Message);
+
+                LastException = ex.Message;
+
+                if (CheckConnection() == false) return result;
+            }
+
+            return result;
+        }
+
         private int Execute_NonQuery(string query)
         {
             int result = (int)ExcuteResult.Fail;
@@ -163,6 +196,7 @@ namespace DB
             {
                 _sqlCmd = new SqlCommand();
                 _sqlCmd.Connection = this.Connection;
+                
                 _sqlCmd.CommandText = query;
                 result = _sqlCmd.ExecuteNonQuery();
             }

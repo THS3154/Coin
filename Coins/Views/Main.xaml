@@ -18,7 +18,7 @@
 
         <ContentControl Grid.Column="0" prism:RegionManager.RegionName="SideMenu" />
         <Grid Grid.Column="1" Background="{DynamicResource MainColor}">
-            <Border CornerRadius="5 0 0 0" Padding="5" BorderThickness="0" Background="White" >
+            <Border CornerRadius="5 0 0 0" Padding="5" BorderThickness="0" Background="White"  >
                 <ContentControl prism:RegionManager.RegionName="Viewer" />
             </Border>
         </Grid>

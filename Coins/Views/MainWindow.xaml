@@ -35,9 +35,9 @@
         <TitleBar:TitleBarModel Grid.Row="0"   Style="{StaticResource ResourceKey=MyTitle}" ContentColor="{DynamicResource TitleColor}" WindowForm="{x:Reference MyWindow}" 
                                 BackColor="{DynamicResource MainColor}" HoverBackColor="{DynamicResource MainHoverColor}" TitleName="{Binding Title}" />
 
-        
-        
-        <Border Grid.Row="1"  Background="White">
+
+
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="{DynamicResource MainColor}"  Background="White">
             <ContentControl  x:Name="RegionBase" prism:RegionManager.RegionName="Main" />
         </Border>
 

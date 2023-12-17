@@ -19,3 +19,4 @@ C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\PublicColor\obj\Debug\net6.0-window
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\PublicColor\obj\Debug\net6.0-windows\View\ColorView.baml
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\PublicColor\obj\Debug\net6.0-windows\PublicColor.g.resources
 C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\PublicColor\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dldyd\Desktop\WPF코드\Prism\Coins\PublicColor\obj\Debug\net6.0-windows\DynamicColors.baml
